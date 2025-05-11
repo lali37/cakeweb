@@ -13,15 +13,18 @@
 
 <body>
   <header>
-    <h1>Cake Haven</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#cakes">Cakes</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    
-  </header>
+  <h1>Cake Haven</h1>
+  <div class="hamburger" id="hamburger-icon">
+    <i class="fa fa-bars"></i>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#cakes">Cakes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
 
   <section class="hero">
     <div class="hero-content">
@@ -96,7 +99,14 @@
     <p>&copy; 2025 Cake Haven. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger-icon');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+    });
+  </script>
 </body>
 
 </html>

@@ -224,3 +224,24 @@ nav a {
   font-family: jonova;
 
 }
+
+@media (min-width: 430px) {
+  header {
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0;
+    width: auto;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
